@@ -1,12 +1,17 @@
+
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Button from './ReusableComponents/Button';
+import TextInputIcon from './ReusableComponents/TextInputIcon';
+import SafeView from './ReusableComponents/SafeView';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hi ,Iam vinay</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeView>
+
+    <Text>vinay</Text>
+    </SafeView>
+    
   );
 }
 
