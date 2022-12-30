@@ -10,15 +10,15 @@ const TextInputIcon = ({Iconname,style,text,settext,name,...otherProps}) => {
       <View
       style={[{
           
-          backgroundColor:colors.fieldcolor,
-          flexDirection:'row',
-          paddingHorizontal:20,
-  
-          borderRadius:10,
-          // borderColor:'red',
-          // borderWidth:1,
-          justifyContent:'space-between',
-          paddingVertical:10
+        backgroundColor:colors.fieldcolor,
+        flexDirection:'row',
+        paddingHorizontal:20,
+        marginVertical:10,
+        borderRadius:10,
+        
+        justifyContent:'space-between',
+        paddingVertical:20
+
   
       },style]}
       >
@@ -47,26 +47,26 @@ const TextInputIcon = ({Iconname,style,text,settext,name,...otherProps}) => {
           backgroundColor:colors.fieldcolor,
           flexDirection:'row',
           paddingHorizontal:20,
-  
+          marginVertical:10,
           borderRadius:10,
-          // borderColor:'red',
-          // borderWidth:1,
+          
           justifyContent:'space-between',
-          paddingVertical:10
+          paddingVertical:20
   
       },style]}
       >
         <TextInput 
         {...otherProps} 
         cursorColor={colors.secondary}
-        placeholderTextColor={colors.secondary}
+        placeholderTextColor={"grey"}
         
         value={text}
-  
+        style={{flex:1,fontSize:14,fontWeight:"600"}}
         onChangeText={(newText) => {
          
           settext(newText);
         }}
+        // onPressIn={()=>{console.log('vinay')}}
         ></TextInput>
         
        

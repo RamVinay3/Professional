@@ -1,10 +1,13 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const SafeView = ({children}) => {
+const SafeView = ({children,style}) => {
   return (
-    <View style={{paddingTop:40}}>
-      {children}
+    <View style={style} >
+     
+           {children}
+      
+      
     </View>
   )
 }
